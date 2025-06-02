@@ -1,0 +1,54 @@
+Big O's
+O(1) Constant - no loops
+
+O(log N) Logarithmic - usually searching algorithms have log n if they are sorted (Binary Search)
+
+O(n) Linear - for loops, while loops through n items
+
+O(n log(n)) Log Linear - usually sorting operations
+
+O(n^2) Quadratic - every element in a collection needs to be compared to ever other element. Two nested loops
+
+O(2^n) Exponential - recursive algorithms that solves a problem of size N
+
+O(n!) Factorial - you are adding a loop for every element
+
+------------------------------------------------------------------------------------------------
+O(1)      Constant        Single statement, direct access
+O(log n)  Logarithmic     Divide and conquer (e.g. binary search)
+O(n)      Linear          Simple loop over n elements
+O(n log n)Linearithmic    Efficient sorting (e.g. merge/heap/quick sort)
+O(n^2)    Quadratic       Double nested loop (every pair)
+O(n^3)    Cubic           Triple nested loop (every triplet)
+O(2^n)    Exponential     All combinations/subsets, brute-force recursion
+O(n!)     Factorial       All permutations (e.g. traveling salesman)
+-------------------------------------------------------------------------
+    -------------------------------------------------------------------------
+| Sorting Algorithm | Space Complexity | Best Case    | Worst Case   |
+|-------------------|-----------------|--------------|--------------|
+| Insertion Sort    | O(1)            | O(n)         | O(n^2)       |
+| Selection Sort    | O(1)            | O(n^2)       | O(n^2)       |
+| Bubble Sort       | O(1)            | O(n)         | O(n^2)       |
+| Merge Sort        | O(n)            | O(n log n)   | O(n log n)   |
+| Quick Sort        | O(log n)        | O(n log n)   | O(n^2)       |
+| Heap Sort         | O(1)            | O(n log n)   | O(n log n)   |
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+| Data Structure      | Access | Search | Insertion | Deletion | Space Complexity |
+|---------------------|--------|--------|-----------|----------|------------------|
+| Array               | O(1)   | O(n)   | O(n)      | O(n)     | O(n)             |
+| Stack               | O(n)   | O(n)   | O(1)      | O(1)     | O(n)             |
+| Queue               | O(n)   | O(n)   | O(1)      | O(1)     | O(n)             |
+| Singly-Linked List  | O(n)   | O(n)   | O(1)      | O(1)     | O(n)             |
+| Doubly-Linked List  | O(n)   | O(n)   | O(1)      | O(1)     | O(n)             |
+| Hash Table          | N/A    | O(n)   | O(n)      | O(n)     | O(n)             |
+-----------------------------------------------------------------------------------
+
+Big O Cheatsheet - Simple Rules
+
+Rule 1: Always look at the worst-case scenario.
+Rule 2: Ignore constant factors (e.g., O(2n) becomes O(n)).
+Rule 3: Use different variables for different input sizes (e.g., O(a + b)). 
+        Add (+) for sequential steps, multiply (*) for nested steps.
+Rule 4: Only keep the fastest-growing term (drop the rest).
+--------------------------------------------------------------------------------
